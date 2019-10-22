@@ -17,10 +17,18 @@ export default {
   },
   watch: {
     firstName: function(val) {
-      this.fullName = val + " " + this.lastName;
+      clearInterval(this.firstIntervel);
+      this.firstIntervel = setInterval(() => {
+        this.fullName = val + " " + this.lastName;
+      }, 1000);
+      console.log("new: %s", val);
     },
     lastName: function(val) {
-      this.fullName = this.firstName + " " + val;
+      clearInterval(this.lastInterval);
+      this.lastInterval = setInterval(() => {
+        this.fullName = this.firstName + " " + val;
+      }, 1000);
+      console.log("new: %s", val);
     }
   }
 };

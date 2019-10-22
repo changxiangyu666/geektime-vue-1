@@ -19,6 +19,7 @@ export default {
       h: []
     };
   },
+  // 监听器，watch中可以执行任何逻辑
   watch: {
     a: function(val, oldVal) {
       this.b.c += 1;
