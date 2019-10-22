@@ -12,3 +12,9 @@ npm install
 ### 启动环境
 
 npm run serve
+
+进入相应文件夹(有package.json和node_modules的那个)后执行以下步骤：
+
+### 启动环境
+
+npm run serve
