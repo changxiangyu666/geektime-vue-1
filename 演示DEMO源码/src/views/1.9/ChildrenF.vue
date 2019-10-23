@@ -20,9 +20,11 @@ export default {
   },
   methods: {
     getARef() {
+      //获取根组件实例
       console.log(this.getParentRef());
     },
     getHRef() {
+      //获取指定名称组件实例
       console.log(this.getParentChildrenRef("childrenH"));
     }
   }

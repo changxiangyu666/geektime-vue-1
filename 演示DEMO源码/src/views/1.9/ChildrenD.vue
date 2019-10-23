@@ -2,6 +2,7 @@
   <div class="border1">
     <h2>D 结点</h2>
     <ChildrenG />
+    <!-- 使用指令注册子组件 变成回调的形式 -->
     <ChildrenH v-ant-ref="c => setChildrenRef('childrenH', c)" />
     <ChildrenI />
   </div>

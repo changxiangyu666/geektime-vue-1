@@ -17,15 +17,18 @@ export default {
     ChildrenC,
     ChildrenD
   },
-  // 通过provide提供了主动通知还有几个主动获取的钩子函数
+  // 通过provide在根组件提供了主动通知还有几个主动获取的钩子函数
   provide() {
     return {
+      //主动通知 将组件实例绑定在根组件上
       setChildrenRef: (name, ref) => {
         this[name] = ref;
       },
+      //主动获取 获取绑定的组件
       getChildrenRef: name => {
         return this[name];
       },
+      // 获取根组件
       getRef: () => {
         return this;
       }
