@@ -18,6 +18,7 @@ export default {
     ChildrenC,
     ChildrenD
   },
+  // 通过 provide方法 提供数据
   provide() {
     this.theme = Vue.observable({
       color: "blue"

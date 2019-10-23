@@ -8,6 +8,7 @@ export default {
   components: {},
   inject: {
     theme1: {
+      // 通过from特性起一个别名theme1
       from: "theme",
       default: () => ({})
     }

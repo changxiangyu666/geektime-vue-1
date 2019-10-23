@@ -12,13 +12,13 @@ export default {
   components: {
     ChildrenE,
     ChildrenF
+  },
+  provide() {
+    return {
+      theme: {
+        color: "green"
+      }
+    };
   }
-  // provide() {
-  //   return {
-  //     theme: {
-  //       color: "green"
-  //     }
-  //   };
-  // }
 };
 </script>

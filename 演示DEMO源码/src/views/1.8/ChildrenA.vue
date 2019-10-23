@@ -24,6 +24,7 @@ export default {
       }
     };
   },
+  // 提供响应式的数据
   // provide() {
   //   return {
   //     theme: this

@@ -7,6 +7,7 @@
 <script>
 export default {
   components: {},
+  // 通过 inject 的方式注入数据
   inject: {
     theme: {
       default: () => ({})
