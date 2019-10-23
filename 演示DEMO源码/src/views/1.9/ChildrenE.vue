@@ -1,5 +1,6 @@
 <template>
   <div class="border2">
+    <!-- 通过v-ant-ref指令变成回调的形式 -->
     <h3 v-ant-ref="c => setChildrenRef('childrenE', c)">
       E 结点
     </h3>

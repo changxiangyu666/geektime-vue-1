@@ -17,6 +17,7 @@ export default {
     ChildrenC,
     ChildrenD
   },
+  // 通过provide提供了主动通知还有几个主动获取的钩子函数
   provide() {
     return {
       setChildrenRef: (name, ref) => {
