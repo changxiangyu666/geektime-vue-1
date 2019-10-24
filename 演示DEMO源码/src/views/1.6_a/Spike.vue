@@ -13,7 +13,7 @@ export default {
     startTime: {
       required: true,
       validator: function(value) {
-        // moment 类型
+        // moment 类型 对时间做各种格式化的库
         return moment.isMoment(value);
       }
     },
