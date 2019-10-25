@@ -6,14 +6,17 @@ Vue.use(Vuex)
 Vue.config.productionTip = false
 
 const store = new Vuex.Store({
+  // 取值 State:提供一个响应式数据
   state: {
     count: 0,
   },
+  // 赋值 Mutation：更改state方法
   mutations: {
     increment(state) {
       state.count++
     }
   },
+  // 赋值 Action:触发mutation方法
   actions: {
     increment({commit}) {
       setTimeout(()=>{
@@ -22,13 +25,14 @@ const store = new Vuex.Store({
       }, 3000)
     }
   },
+  // 取值 Getter:借助Vue的计算属性computed来实现缓存
   getters: {
     doubleCount(state) {
       return state.count * 2
     }
   }
 })
-
+// Module：Vue.set动态添加state到响应式数据中
 new Vue({
   store,
   render: h => h(App),
