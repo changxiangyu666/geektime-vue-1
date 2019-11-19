@@ -63,7 +63,7 @@ FormItem.methods.decoratorOption = vnode => {
 };
 
 Vue.config.productionTip = false;
-
+// 注册
 Vue.use(Button);
 Vue.use(Layout);
 Vue.use(Icon);
