@@ -1,7 +1,8 @@
+// 权限校验组件
 <script>
 import { check } from "../utils/auth";
 export default {
-  functional: true,
+  functional: true, //函数式组件
   props: {
     authority: {
       type: Array,
