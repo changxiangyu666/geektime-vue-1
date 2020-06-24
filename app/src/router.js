@@ -18,8 +18,18 @@ export default new Router({
     },
     {
       path: "/ZhengFangXing",
-      name: "圈舍一览",
+      name: "正方形",
       component: () => import("./components/ZhengFangXing")
+    },
+    {
+      path: "/BaoDanChaXun",
+      name: "保单查询",
+      component: () => import("./components/BaoDanChaXun")
+    },
+    {
+      path: "/BaoDanShangChuan",
+      name: "保单上传",
+      component: () => import("./components/BaoDanShangChuan")
     },
   ]
 });

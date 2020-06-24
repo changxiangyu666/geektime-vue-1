@@ -2,6 +2,8 @@
     <div id="nav">
         <div><router-link :to="`/JuanSheYiLan`">圈舍一览</router-link></div>
         <div><router-link :to="`/ZhengFangXing`">正方形</router-link></div>
+        <div><router-link :to="`/BaoDanChaXun`">保单查询</router-link></div>
+        <div><router-link :to="`/BaoDanShangChuan`">保单上传</router-link></div>
     </div>
 </template>
 
